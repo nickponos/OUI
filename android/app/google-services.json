@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "517000728922",
+    "firebase_url": "https://oui-firebase.firebaseio.com",
+    "project_id": "oui-firebase",
+    "storage_bucket": "oui-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517000728922:android:782e6060f01dfe3835e363",
+        "android_client_info": {
+          "package_name": "com.oui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517000728922-7uck7mha040afmf0hrs6r8ddrn4mi60o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM-FjZRKrXloagTv0UXHQh0zhtBiPiav4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517000728922-7uck7mha040afmf0hrs6r8ddrn4mi60o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "517000728922-mc2fa8818rb78nr03ioilsjc5pb5crua.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.birdiefire.pa"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517000728922:android:40c82e5b472f20aa",
+        "android_client_info": {
+          "package_name": "com.twooui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517000728922-7ch7pcviqr55h4r9c3kktjofou6c4s2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twooui",
+            "certificate_hash": "48de0252ff2d32d872d24a095204f691f4db081d"
+          }
+        },
+        {
+          "client_id": "517000728922-thiuuesvaqc8qlbsgt9fkglnp9f9ns76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twooui",
+            "certificate_hash": "6046c4994067039e853662d7c42134acd6df3406"
+          }
+        },
+        {
+          "client_id": "517000728922-ki98qsmd7mr90hc39bh71ki8this35uk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.twooui",
+            "certificate_hash": "736c898147d81e8f46cee9f9f663dd0fbc671279"
+          }
+        },
+        {
+          "client_id": "517000728922-7uck7mha040afmf0hrs6r8ddrn4mi60o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM-FjZRKrXloagTv0UXHQh0zhtBiPiav4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517000728922-7uck7mha040afmf0hrs6r8ddrn4mi60o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "517000728922-mc2fa8818rb78nr03ioilsjc5pb5crua.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.birdiefire.pa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

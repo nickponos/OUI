@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>517000728922-8e4jaq750jes444v4mk36qrt8vvvclli.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.517000728922-8e4jaq750jes444v4mk36qrt8vvvclli</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>517000728922-7ch7pcviqr55h4r9c3kktjofou6c4s2v.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAIZTBV1cKNS2ew9JTD41V_16XlAs_ttx4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>517000728922</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.TwoOui</string>
+	<key>PROJECT_ID</key>
+	<string>oui-firebase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>oui-firebase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:517000728922:ios:1204b889a20a9359</string>
+	<key>DATABASE_URL</key>
+	<string>https://oui-firebase.firebaseio.com</string>
+	<key>FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED</key>
+	<string>NO</string>
+</dict>
+</plist>

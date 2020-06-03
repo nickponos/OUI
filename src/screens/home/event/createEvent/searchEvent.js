@@ -61,7 +61,7 @@ export default class SearchEvent extends Component {
                 if (result.result) {
                     var images = []
                     result.result.photos.map((item, index) => {
-                        var image = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${item.photo_reference}&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU`
+                        var image = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${item.photo_reference}&key=YOURKEY`
                         images.push(image)
                     })
                     var details = result.result
@@ -77,27 +77,9 @@ export default class SearchEvent extends Component {
             }
         };
 
-        request.open('GET', `https://maps.googleapis.com/maps/api/place/details/json?placeid=${id}&fields=name,rating,formatted_phone_number,opening_hours,website,reviews,formatted_address,photos&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU`);
+        request.open('GET', `https://maps.googleapis.com/maps/api/place/details/json?placeid=${id}&fields=name,rating,formatted_phone_number,opening_hours,website,reviews,formatted_address,photos&key=YOURKEY`);
         request.send();
-        // fetch(`https://maps.googleapis.com/maps/api/place/details/json?placeid=${id}&fields=name,rating,formatted_phone_number,opening_hours,website,reviews,formatted_address,photos&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU`)
-        //     .then((res) => res.json())
-        //     .then((result) => {
-        //         console.log('Details Result', result)
-        //         if (result.result) {
-        //             var images = []
-        //             result.result.photos.map((item, index) => {
-        //                 var image = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${item.photo_reference}&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU`
-        //                 images.push(image)
-        //             })
-        //             var details = result.result
-        //             details.photos = images
-        //             console.log('Details', details, data)
-        //             var openingHours = details.opening_hours.weekday_text
-        //             var openingHoursData = openingHours.map((item) => item.split(': '))
-        //             console.log('OPeningHours Data', openingHoursData)
-        //             this.setState({ details: details, data: data, modalVisible: !this.state.modalVisible, openingHours: openingHoursData })
-        //         }
-        //     })
+        
     }
     _select() {
         var serachData = this.state.data

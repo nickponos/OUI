@@ -34,35 +34,7 @@ export default class AddEvent extends Component {
     _search(search, image) {
         navigator.geolocation.getCurrentPosition((position) => {
             this.setState({ latitude: position.coords.latitude, longitude: position.coords.longitude })
-            // fetch(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position.coords.latitude},${position.coords.longitude}&radius=1000&type=${search}&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU`)
-            //     .then((result) => {
-            //         console.log('Places Result '+search, result)
-            //         // if (result.results.length > 0) {
-            //         //     var data = []
-            //         //     result.results.map((item, index) => {
-            //         //         if (item.types.includes(search)) {
-            //         //             console.log('Item', item.types[0])
-            //         //             var image = item.photos ? `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${item.photos[0].photo_reference}&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU` : 'https://firebasestorage.googleapis.com/v0/b/new-2oui.appspot.com/o/images%2F1558429895907.jpg?alt=media&token=7149ed83-1841-44fd-a0e0-7311d0d28366'
-            //         //             var data1 = {
-            //         //                 location: item.geometry.location,
-            //         //                 placeId: item.place_id,
-            //         //                 image: image,
-            //         //                 title: item.name,
-            //         //                 address: item.vicinity,
-            //         //                 star_img: require('@images/star.png'),
-            //         //                 rating: item.rating,
-            //         //                 view: item.user_ratings_total,
-            //         //                 id: (index + 1) + '.',
-            //         //                 titleColor: 'rgb(239,113,184)',
-            //         //                 category: search.toUpperCase(),
-            //         //             }
-            //         //             data.push(data1)
-            //         //         }
-            //         //     })
-            //         //     console.log('data', data)
-            //         //     Actions.SearchEvent({image:image, searchData: data, location: { lat: this.state.latitude, long: this.state.longitude } })
-            //         // }
-            //     })
+           
             let cityName = "";
 
             var request1 = new XMLHttpRequest();
@@ -79,7 +51,7 @@ export default class AddEvent extends Component {
                             result.results.map((item, index) => {
                                 if (item.types.includes(search)) {
                                     console.log('Item', item.types[0])
-                                    var image = item.photos ? `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${item.photos[0].photo_reference}&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU` : 'https://firebasestorage.googleapis.com/v0/b/new-2oui.appspot.com/o/images%2F1558429895907.jpg?alt=media&token=7149ed83-1841-44fd-a0e0-7311d0d28366'
+                                    var image = item.photos ? `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${item.photos[0].photo_reference}&key=YOURKEY` : 'https://firebasestorage.googleapis.com/v0/b/new-2oui.appspot.com/o/images%2F1558429895907.jpg?alt=media&token=7149ed83-1841-44fd-a0e0-7311d0d28366'
                                     var data1 = {
                                         location: item.geometry.location,
                                         placeId: item.place_id,
@@ -122,16 +94,16 @@ export default class AddEvent extends Component {
                             }
                         });
                     }
-                    request1.open('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position.coords.latitude},${position.coords.longitude}&radius=1000&type=${search}&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU`);
+                    request1.open('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position.coords.latitude},${position.coords.longitude}&radius=1000&type=${search}&key=YOURKEY`);
                     request1.send();
                 } else {
-                    request1.open('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position.coords.latitude},${position.coords.longitude}&radius=1000&type=${search}&key=AIzaSyCvV6rPpTcCJBm1VBhyWAftxgulKt3UicU`);
+                    request1.open('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${position.coords.latitude},${position.coords.longitude}&radius=1000&type=${search}&key=YOURKEY`);
                     request1.send();
                     console.warn('City getting error', e);
                 }
             };
 
-            request.open('GET', `https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=AIzaSyDoQ5Dy1DjhpqfzFgqCI28UIpA7hz0Y0To`);
+            request.open('GET', `https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=YOURKEY`);
             request.send();
 
             
